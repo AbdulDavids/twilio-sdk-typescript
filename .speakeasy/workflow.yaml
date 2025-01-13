@@ -10,6 +10,9 @@ targets:
     twilio-sdk:
         target: typescript
         source: Twilio - Api
+        publish:
+            npm:
+                token: $npm_token
         codeSamples:
             registry:
                 location: registry.speakeasyapi.dev/ritza-rzx/ritza/twilio---api-typescript-code-samples
