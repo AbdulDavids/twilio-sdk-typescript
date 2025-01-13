@@ -1,0 +1,36 @@
+speakeasyVersion: 1.468.2
+sources:
+    Twilio - Api:
+        sourceNamespace: twilio---api
+        sourceRevisionDigest: sha256:e230344183c3afc1191f5afde7c15c5b387bbd0b9edfcb6b57412ccb204b8e2e
+        sourceBlobDigest: sha256:39468ab080abb3018045b9d4ed50c287164b6b624fc3ea534ed348119eb65528
+        tags:
+            - latest
+            - 1.0.0
+targets:
+    twilio-sdk:
+        source: Twilio - Api
+        sourceNamespace: twilio---api
+        sourceRevisionDigest: sha256:e230344183c3afc1191f5afde7c15c5b387bbd0b9edfcb6b57412ccb204b8e2e
+        sourceBlobDigest: sha256:39468ab080abb3018045b9d4ed50c287164b6b624fc3ea534ed348119eb65528
+        codeSamplesNamespace: twilio---api-typescript-code-samples
+        codeSamplesRevisionDigest: sha256:bdfdca5904500be7ff8a1e7741a5d41d3b3b74feafc915fca4f5dc991902bd43
+workflow:
+    workflowVersion: 1.0.0
+    speakeasyVersion: latest
+    sources:
+        Twilio - Api:
+            inputs:
+                - location: ..\twilio_api_v2010.yaml
+            registry:
+                location: registry.speakeasyapi.dev/ritza-rzx/ritza/twilio---api
+    targets:
+        twilio-sdk:
+            target: typescript
+            source: Twilio - Api
+            codeSamples:
+                registry:
+                    location: registry.speakeasyapi.dev/ritza-rzx/ritza/twilio---api-typescript-code-samples
+                labelOverride:
+                    fixedValue: Typescript (SDK)
+                blocking: false

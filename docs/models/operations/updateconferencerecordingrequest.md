@@ -1,0 +1,22 @@
+# UpdateConferenceRecordingRequest
+
+## Example Usage
+
+```typescript
+import { UpdateConferenceRecordingRequest } from "twilio-sdk/models/operations";
+
+let value: UpdateConferenceRecordingRequest = {
+  accountSid: "<id>",
+  conferenceSid: "<id>",
+  sid: "<id>",
+};
+```
+
+## Fields
+
+| Field                                                                                                                                                            | Type                                                                                                                                                             | Required                                                                                                                                                         | Description                                                                                                                                                      |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `accountSid`                                                                                                                                                     | *string*                                                                                                                                                         | :heavy_check_mark:                                                                                                                                               | The SID of the [Account](https://www.twilio.com/docs/iam/api/account) that created the Conference Recording resource to update.                                  |
+| `conferenceSid`                                                                                                                                                  | *string*                                                                                                                                                         | :heavy_check_mark:                                                                                                                                               | The Conference SID that identifies the conference associated with the recording to update.                                                                       |
+| `sid`                                                                                                                                                            | *string*                                                                                                                                                         | :heavy_check_mark:                                                                                                                                               | The Twilio-provided string that uniquely identifies the Conference Recording resource to update. Use `Twilio.CURRENT` to reference the current active recording. |
+| `requestBody`                                                                                                                                                    | [operations.UpdateConferenceRecordingUpdateConferenceRecordingRequest](../../models/operations/updateconferencerecordingupdateconferencerecordingrequest.md)     | :heavy_minus_sign:                                                                                                                                               | N/A                                                                                                                                                              |

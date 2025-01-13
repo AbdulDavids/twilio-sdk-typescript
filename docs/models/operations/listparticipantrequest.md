@@ -1,0 +1,25 @@
+# ListParticipantRequest
+
+## Example Usage
+
+```typescript
+import { ListParticipantRequest } from "twilio-sdk/models/operations";
+
+let value: ListParticipantRequest = {
+  accountSid: "<id>",
+  conferenceSid: "<id>",
+};
+```
+
+## Fields
+
+| Field                                                                                                                 | Type                                                                                                                  | Required                                                                                                              | Description                                                                                                           |
+| --------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| `accountSid`                                                                                                          | *string*                                                                                                              | :heavy_check_mark:                                                                                                    | The SID of the [Account](https://www.twilio.com/docs/iam/api/account) that created the Participant resources to read. |
+| `conferenceSid`                                                                                                       | *string*                                                                                                              | :heavy_check_mark:                                                                                                    | The SID of the conference with the participants to read.                                                              |
+| `muted`                                                                                                               | *boolean*                                                                                                             | :heavy_minus_sign:                                                                                                    | Whether to return only participants that are muted. Can be: `true` or `false`.                                        |
+| `hold`                                                                                                                | *boolean*                                                                                                             | :heavy_minus_sign:                                                                                                    | Whether to return only participants that are on hold. Can be: `true` or `false`.                                      |
+| `coaching`                                                                                                            | *boolean*                                                                                                             | :heavy_minus_sign:                                                                                                    | Whether to return only participants who are coaching another call. Can be: `true` or `false`.                         |
+| `pageSize`                                                                                                            | *number*                                                                                                              | :heavy_minus_sign:                                                                                                    | How many resources to return in each list page. The default is 50, and the maximum is 1000.                           |
+| `page`                                                                                                                | *number*                                                                                                              | :heavy_minus_sign:                                                                                                    | The page index. This value is simply for client state.                                                                |
+| `pageToken`                                                                                                           | *string*                                                                                                              | :heavy_minus_sign:                                                                                                    | The page token. This is provided by the API.                                                                          |

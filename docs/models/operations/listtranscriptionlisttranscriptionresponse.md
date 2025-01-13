@@ -1,0 +1,25 @@
+# ListTranscriptionListTranscriptionResponse
+
+OK
+
+## Example Usage
+
+```typescript
+import { ListTranscriptionListTranscriptionResponse } from "twilio-sdk/models/operations";
+
+let value: ListTranscriptionListTranscriptionResponse = {};
+```
+
+## Fields
+
+| Field                                                                                                | Type                                                                                                 | Required                                                                                             | Description                                                                                          |
+| ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| `transcriptions`                                                                                     | [components.ApiV2010AccountTranscription](../../models/components/apiv2010accounttranscription.md)[] | :heavy_minus_sign:                                                                                   | N/A                                                                                                  |
+| `end`                                                                                                | *number*                                                                                             | :heavy_minus_sign:                                                                                   | N/A                                                                                                  |
+| `firstPageUri`                                                                                       | *string*                                                                                             | :heavy_minus_sign:                                                                                   | N/A                                                                                                  |
+| `nextPageUri`                                                                                        | *string*                                                                                             | :heavy_minus_sign:                                                                                   | N/A                                                                                                  |
+| `page`                                                                                               | *number*                                                                                             | :heavy_minus_sign:                                                                                   | N/A                                                                                                  |
+| `pageSize`                                                                                           | *number*                                                                                             | :heavy_minus_sign:                                                                                   | N/A                                                                                                  |
+| `previousPageUri`                                                                                    | *string*                                                                                             | :heavy_minus_sign:                                                                                   | N/A                                                                                                  |
+| `start`                                                                                              | *number*                                                                                             | :heavy_minus_sign:                                                                                   | N/A                                                                                                  |
+| `uri`                                                                                                | *string*                                                                                             | :heavy_minus_sign:                                                                                   | N/A                                                                                                  |

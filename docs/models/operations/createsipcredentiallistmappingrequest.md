@@ -1,0 +1,20 @@
+# CreateSipCredentialListMappingRequest
+
+## Example Usage
+
+```typescript
+import { CreateSipCredentialListMappingRequest } from "twilio-sdk/models/operations";
+
+let value: CreateSipCredentialListMappingRequest = {
+  accountSid: "<id>",
+  domainSid: "<id>",
+};
+```
+
+## Fields
+
+| Field                                                                                                                                                                            | Type                                                                                                                                                                             | Required                                                                                                                                                                         | Description                                                                                                                                                                      |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `accountSid`                                                                                                                                                                     | *string*                                                                                                                                                                         | :heavy_check_mark:                                                                                                                                                               | The unique id of the [Account](https://www.twilio.com/docs/iam/api/account) responsible for this resource.                                                                       |
+| `domainSid`                                                                                                                                                                      | *string*                                                                                                                                                                         | :heavy_check_mark:                                                                                                                                                               | A 34 character string that uniquely identifies the SIP Domain for which the CredentialList resource will be mapped.                                                              |
+| `requestBody`                                                                                                                                                                    | [operations.CreateSipCredentialListMappingCreateSipCredentialListMappingRequest](../../models/operations/createsipcredentiallistmappingcreatesipcredentiallistmappingrequest.md) | :heavy_minus_sign:                                                                                                                                                               | N/A                                                                                                                                                                              |

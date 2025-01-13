@@ -1,0 +1,24 @@
+# ListRecordingAddOnResultPayloadRequest
+
+## Example Usage
+
+```typescript
+import { ListRecordingAddOnResultPayloadRequest } from "twilio-sdk/models/operations";
+
+let value: ListRecordingAddOnResultPayloadRequest = {
+  accountSid: "<id>",
+  referenceSid: "<id>",
+  addOnResultSid: "<id>",
+};
+```
+
+## Fields
+
+| Field                                                                                                                                   | Type                                                                                                                                    | Required                                                                                                                                | Description                                                                                                                             |
+| --------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| `accountSid`                                                                                                                            | *string*                                                                                                                                | :heavy_check_mark:                                                                                                                      | The SID of the [Account](https://www.twilio.com/docs/iam/api/account) that created the Recording AddOnResult Payload resources to read. |
+| `referenceSid`                                                                                                                          | *string*                                                                                                                                | :heavy_check_mark:                                                                                                                      | The SID of the recording to which the AddOnResult resource that contains the payloads to read belongs.                                  |
+| `addOnResultSid`                                                                                                                        | *string*                                                                                                                                | :heavy_check_mark:                                                                                                                      | The SID of the AddOnResult to which the payloads to read belongs.                                                                       |
+| `pageSize`                                                                                                                              | *number*                                                                                                                                | :heavy_minus_sign:                                                                                                                      | How many resources to return in each list page. The default is 50, and the maximum is 1000.                                             |
+| `page`                                                                                                                                  | *number*                                                                                                                                | :heavy_minus_sign:                                                                                                                      | The page index. This value is simply for client state.                                                                                  |
+| `pageToken`                                                                                                                             | *string*                                                                                                                                | :heavy_minus_sign:                                                                                                                      | The page token. This is provided by the API.                                                                                            |

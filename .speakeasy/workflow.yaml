@@ -1,0 +1,18 @@
+workflowVersion: 1.0.0
+speakeasyVersion: latest
+sources:
+    Twilio - Api:
+        inputs:
+            - location: ..\twilio_api_v2010.yaml
+        registry:
+            location: registry.speakeasyapi.dev/ritza-rzx/ritza/twilio---api
+targets:
+    twilio-sdk:
+        target: typescript
+        source: Twilio - Api
+        codeSamples:
+            registry:
+                location: registry.speakeasyapi.dev/ritza-rzx/ritza/twilio---api-typescript-code-samples
+            labelOverride:
+                fixedValue: Typescript (SDK)
+            blocking: false

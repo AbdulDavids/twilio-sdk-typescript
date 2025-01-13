@@ -1,0 +1,20 @@
+# ApiV2010AccountQueueMember
+
+## Example Usage
+
+```typescript
+import { ApiV2010AccountQueueMember } from "twilio-sdk/models/components";
+
+let value: ApiV2010AccountQueueMember = {};
+```
+
+## Fields
+
+| Field                                                                                                              | Type                                                                                                               | Required                                                                                                           | Description                                                                                                        |
+| ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------ |
+| `callSid`                                                                                                          | *string*                                                                                                           | :heavy_minus_sign:                                                                                                 | The SID of the [Call](https://www.twilio.com/docs/voice/api/call-resource) the Member resource is associated with. |
+| `dateEnqueued`                                                                                                     | *string*                                                                                                           | :heavy_minus_sign:                                                                                                 | The date that the member was enqueued, given in RFC 2822 format.                                                   |
+| `position`                                                                                                         | *number*                                                                                                           | :heavy_minus_sign:                                                                                                 | This member's current position in the queue.                                                                       |
+| `uri`                                                                                                              | *string*                                                                                                           | :heavy_minus_sign:                                                                                                 | The URI of the resource, relative to `https://api.twilio.com`.                                                     |
+| `waitTime`                                                                                                         | *number*                                                                                                           | :heavy_minus_sign:                                                                                                 | The number of seconds the member has been in the queue.                                                            |
+| `queueSid`                                                                                                         | *string*                                                                                                           | :heavy_minus_sign:                                                                                                 | The SID of the Queue the member is in.                                                                             |

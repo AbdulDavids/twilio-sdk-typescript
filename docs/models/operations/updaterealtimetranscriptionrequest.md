@@ -1,0 +1,22 @@
+# UpdateRealtimeTranscriptionRequest
+
+## Example Usage
+
+```typescript
+import { UpdateRealtimeTranscriptionRequest } from "twilio-sdk/models/operations";
+
+let value: UpdateRealtimeTranscriptionRequest = {
+  accountSid: "<id>",
+  callSid: "<id>",
+  sid: "<id>",
+};
+```
+
+## Fields
+
+| Field                                                                                                                                                                | Type                                                                                                                                                                 | Required                                                                                                                                                             | Description                                                                                                                                                          |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `accountSid`                                                                                                                                                         | *string*                                                                                                                                                             | :heavy_check_mark:                                                                                                                                                   | The SID of the [Account](https://www.twilio.com/docs/iam/api/account) that created this Transcription resource.                                                      |
+| `callSid`                                                                                                                                                            | *string*                                                                                                                                                             | :heavy_check_mark:                                                                                                                                                   | The SID of the [Call](https://www.twilio.com/docs/voice/api/call-resource) the Transcription resource is associated with.                                            |
+| `sid`                                                                                                                                                                | *string*                                                                                                                                                             | :heavy_check_mark:                                                                                                                                                   | The SID of the Transcription resource, or the `name` used when creating the resource                                                                                 |
+| `requestBody`                                                                                                                                                        | [operations.UpdateRealtimeTranscriptionUpdateRealtimeTranscriptionRequest](../../models/operations/updaterealtimetranscriptionupdaterealtimetranscriptionrequest.md) | :heavy_minus_sign:                                                                                                                                                   | N/A                                                                                                                                                                  |
